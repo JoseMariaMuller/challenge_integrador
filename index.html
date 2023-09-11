@@ -1,36 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home | Funkoshopimg</title>
+    <title>Home | Funkoshop</title>
+    <link rel="stylesheet" href="./css/index.css">
 </head>
+
 <body>
-    <header> <!-- Inicio Header -->
-        <nav>
-            <picture>
-                <a href="index.html">
+
+    <header> <!--Inicio Header-->
+        <nav class="navbar container">
+            <picture class="navbar__logo">
+                <a href="index.html"> 
                     <img src="./img/branding/logo_light_horizontal.svg" alt="Isologotipo de la Marca Funkoshop">
+                        
                 </a>
             </picture>
-            <ul>
-                <li>
-                    <a href="./pages/shop.html">SHOP</a>
+
+            <ul class="navbar__menu">
+                <li class="navbar__item  with-submenu ">
+                    <a class="navbar__link with-icon" href="./pages/shop.html">SHOP <iconify-icon
+                            icon="tabler:chevron-down"></iconify-icon> </a>
+                    <ul class="submenu">
+                        <li class="submenu__item ">
+                            <a href="" class="submenu__link"> Funkos</a>
+                        </li>
+                        <li class="submenu__item">
+                            <a href="" class="submenu__link"> Remeras</a>
+                        </li>
+                        <li class="submenu__item">
+                            <a href="" class="submenu__link"> Llaveros</a>
+                        </li>
+                    </ul>
                 </li>
-                <li>
-                    <a href="./pages/contact.html">CONTACTO</a>
+                <li class="navbar__item"> <a class="navbar__link" href="./pages/contact.html">CONTACTO</a>
                 </li>
-                <li>
-                    <a href="./pages/login.html">LOGIN</a>
+                <li class="navbar__item"> <a class="navbar__link" href="./pages/login.html">LOGIN</a>
                 </li>
-                <li>
-                    <a href="./pages/cart.html">
-                        <img src="./img/icons/cart-icon.svg" alt="icono de carrito">
-                    </a>
+                <li class="navbar__item"> <a class="navbar__cart" href="./pages/cart.html"><img
+                            src="./img/icons/cart-icon.svg" alt=""></a>
                 </li>
             </ul>
         </nav>
-    </header>  <!-- Fin Header -->
+    </header> <!--fin  Header-->
 
+    <script src="https://cdn.jsdelivr.net/npm/iconify-icon@1.0.8/dist/iconify-icon.min.js"></script>
 </body>
 </html>
